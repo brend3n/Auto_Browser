@@ -30,7 +30,8 @@ fi
 get_user_agent_string
 get_names_from_user
 
-touch "./${SCRIPT_FOLDER}/${OUTPUT_SCRIPT}/${OUTPUT_SCRIPT}.out"
-playwright codegen --save-storage "./${SCRIPT_FOLDER}/${OUTPUT_SCRIPT}/${OUTPUT_SCRIPT}.out" --user-agent "${USER_AGENT_STR}" --target "python" -o "./${SCRIPT_FOLDER}/${OUTPUT_SCRIPT}/${OUTPUT_SCRIPT}.py"
+OUTPUT_FOLDER="./${SCRIPT_FOLDER}/${OUTPUT_SCRIPT}/${OUTPUT_SCRIPT}"
+touch "${OUTPUT_FOLDER}.out"
+playwright codegen --save-storage "${OUTPUT_FOLDER}.out" --user-agent "${USER_AGENT_STR}" --target "python" -o "${OUTPUT_FOLDER}.py"
 
 echo -e "Done"
