@@ -1,4 +1,7 @@
-# Bash Script: Playwright Code Generation
+# Auto Browser: Python Code Generation from Recorded Browser Actions
+
+Creates python script from a recorded browser session. This script can be ran to playback the action in a non-headless/headless browser window.
+
 
 This Bash script facilitates the generation of Playwright scripts for web automation by interacting with the [Playwright](https://playwright.dev/) CLI. The script prompts the user for input to customize the script and organizes the generated scripts into a designated folder.
 
