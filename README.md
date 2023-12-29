@@ -2,7 +2,7 @@
 
 This Bash script facilitates the generation of Playwright scripts for web automation by interacting with the [Playwright](https://playwright.dev/) CLI. The script prompts the user for input to customize the script and organizes the generated scripts into a designated folder.
 
-## Installation
+## Installation and Setup
 
 Before using the script, make sure you have the Playwright CLI installed.
 ```bash
@@ -13,6 +13,13 @@ or alternatively install the requirements.txt dependencies
 ```bash
 pip install -r requirements.txt
 ```
+
+Lastly,
+
+```bash
+  chmod +x auto_browser.sh
+```
+
 ## Usage
 
 1. **Run the Script:**
