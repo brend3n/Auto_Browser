@@ -6,10 +6,12 @@ OUTPUT_SCRIPT=""
 USER_AGENT_STR=""
 SCRIPT_FOLDER="Generated_Scripts"
 
+
 function get_user_agent_string() {
     echo -e "Getting User Agent"
-    echo -e "Not yet implemented"
-    USER_AGENT_STR=""
+    user_agent=$(python3 user_agent.py)
+    echo "Random User-Agent: $user_agent"
+    USER_AGENT_STR="${user_agent}"
 }
 
 function get_names_from_user() {
